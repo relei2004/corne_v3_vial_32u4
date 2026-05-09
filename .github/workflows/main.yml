@@ -36,7 +36,7 @@ jobs:
       - name: Build firmware
         working-directory: vial-qmk
         run: |
-          qmk compile -kb crkbd/rev1 -km default
+          qmk compile -kb crkbd/rev1 -km vial
 
       - name: Upload firmware
         uses: actions/upload-artifact@v4
