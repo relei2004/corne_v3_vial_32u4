@@ -22,7 +22,7 @@ jobs:
       - name: Copy keyboard into vial-qmk
         run: |
           mkdir -p vial-qmk/keyboards/cornev3
-          cp -r cornev3/* vial-qmk/keyboards/atom47/
+          cp -r cornev3/* vial-qmk/keyboards/cornev3/
 
       - name: Install QMK CLI
         run: |
