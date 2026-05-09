@@ -21,8 +21,8 @@ jobs:
 
       - name: Copy keyboard into vial-qmk
         run: |
-          mkdir -p vial-qmk/keyboards/cornv3
-          cp -r cornv3/* vial-qmk/keyboards/atom47/
+          mkdir -p vial-qmk/keyboards/cornev3
+          cp -r cornev3/* vial-qmk/keyboards/atom47/
 
       - name: Install QMK CLI
         run: |
@@ -36,12 +36,12 @@ jobs:
       - name: Build firmware
         working-directory: vial-qmk
         run: |
-          qmk compile -kb cornv3 -km vial
+          qmk compile -kb cornev3 -km vial
 
       - name: Upload firmware
         uses: actions/upload-artifact@v4
         with:
-          name: cornv3-vial-firmware
+          name: cornev3-vial-firmware
           path: |
             vial-qmk/*.uf2
             vial-qmk/*.hex
