@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define EE_HANDS
 
 #define USE_SERIAL_PD2
-#ifdef RGBLIGHT_ENABLE
+/*#ifdef RGBLIGHT_ENABLE
 #    undef RGBLED_NUM
 #    define RGBLIGHT_ANIMATIONS
 #    define RGBLED_NUM 42
@@ -124,3 +124,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_MATRIX_DEFAULT_SAT 255 // Sets the default saturation value, if none has been set
 #define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
 #define RGB_MATRIX_DEFAULT_SPD 127 // Sets the default animation speed, if none has been set
+*/
